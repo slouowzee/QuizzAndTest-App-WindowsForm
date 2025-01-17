@@ -53,7 +53,7 @@ namespace QuizzAndTest
             }
             else
             {
-                this.BackColor = Color.FromArgb(192, 192, 255);
+                this.BackColor = Color.FromArgb(191, 192, 255);
                 cbb_diff.Font = new Font(cbb_diff.Font, FontStyle.Regular);
                 txt_afficher.Font = new Font(txt_afficher.Font, FontStyle.Regular);
                 txt_nom.Font = new Font(txt_nom.Font, FontStyle.Regular);
