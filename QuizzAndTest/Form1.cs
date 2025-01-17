@@ -38,7 +38,7 @@ namespace QuizzAndTest
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbb_diff.SelectedItem == "Enfer")
+            if (cbb_diff.SelectedItem.ToString() == "Enfer")
             {
                 this.BackColor = Color.Red;
                 cbb_diff.Font = new Font(cbb_diff.Font, FontStyle.Bold);
