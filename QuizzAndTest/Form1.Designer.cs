@@ -47,7 +47,6 @@
             this.lbl_rep.Size = new System.Drawing.Size(63, 16);
             this.lbl_rep.TabIndex = 0;
             this.lbl_rep.Text = "Réponse";
-            this.lbl_rep.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_afficher
             // 
