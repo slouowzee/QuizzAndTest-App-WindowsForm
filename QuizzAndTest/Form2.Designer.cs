@@ -50,7 +50,7 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // repbox
             // 
@@ -59,6 +59,7 @@
             this.repbox.Controls.Add(this.rep2);
             this.repbox.Controls.Add(this.rep5);
             this.repbox.Controls.Add(this.rep4);
+            this.repbox.Controls.Add(this.submit);
             this.repbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.repbox.Location = new System.Drawing.Point(28, 232);
             this.repbox.Name = "repbox";
@@ -151,7 +152,7 @@
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(297, 417);
+            this.submit.Location = new System.Drawing.Point(269, 166);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(75, 23);
             this.submit.TabIndex = 16;
@@ -160,9 +161,11 @@
             // 
             // picbox
             // 
-            this.picbox.Location = new System.Drawing.Point(610, 190);
+            this.picbox.Image = global::QuizzAndTest.Properties.Resources.Interrogation;
+            this.picbox.Location = new System.Drawing.Point(604, 190);
             this.picbox.Name = "picbox";
-            this.picbox.Size = new System.Drawing.Size(162, 151);
+            this.picbox.Size = new System.Drawing.Size(168, 151);
+            this.picbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picbox.TabIndex = 15;
             this.picbox.TabStop = false;
             // 
@@ -196,7 +199,6 @@
             this.Controls.Add(this.ques);
             this.Controls.Add(this.question);
             this.Controls.Add(this.titre);
-            this.Controls.Add(this.submit);
             this.Controls.Add(this.picbox);
             this.Controls.Add(this.temps);
             this.Controls.Add(this.tempsbox);

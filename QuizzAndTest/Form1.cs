@@ -23,16 +23,16 @@ namespace QuizzAndTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string result = "Bonjour ";
-            if (txt_nom.Text != "" && txt_prenom.Text != "")
-            {
-                result += $"{txt_prenom.Text} {txt_nom.Text}. \r\n La difficultés sélectionnée est {cbb_diff.SelectedItem}.";
-                txt_afficher.Text = result;
-            }
-            else
+            if (txt_nom.Text == "" && txt_prenom.Text == "")
             {
                 MessageBox.Show("Veuillez remplir les champs nom et prénom.", "Erreur", 
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Form2 jeu = new Form2();
+                jeu.Show();
+                this.Hide();
             }
         }
 
@@ -42,7 +42,6 @@ namespace QuizzAndTest
             {
                 this.BackColor = Color.Red;
                 cbb_diff.Font = new Font(cbb_diff.Font, FontStyle.Bold);
-                txt_afficher.Font = new Font(txt_afficher.Font, FontStyle.Bold);
                 txt_nom.Font = new Font(txt_nom.Font, FontStyle.Bold);
                 txt_prenom.Font = new Font(txt_prenom.Font, FontStyle.Bold);
             }
@@ -50,10 +49,14 @@ namespace QuizzAndTest
             {
                 this.BackColor = Color.FromArgb(192, 192, 255);
                 cbb_diff.Font = new Font(cbb_diff.Font, FontStyle.Regular);
-                txt_afficher.Font = new Font(txt_afficher.Font, FontStyle.Regular);
                 txt_nom.Font = new Font(txt_nom.Font, FontStyle.Regular);
                 txt_prenom.Font = new Font(txt_prenom.Font, FontStyle.Regular);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
